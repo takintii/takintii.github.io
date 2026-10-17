@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>TAKINTII CAFE BİSTRO · Yorum</title>
+<meta name="theme-color" content="#0b0b0a">
+<style>
+:root{--bg:#0b0b0a;--fg:#f6f0e3;--muted:#a8a294;--brass:#fbb91d}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--fg);font:16px/1.5 "Segoe UI",system-ui,sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+img{width:140px;height:140px;border-radius:50%;display:block;margin:0 auto 16px}
+a{display:inline-block;margin-top:14px;background:var(--brass);color:var(--bg);font-weight:700;text-decoration:none;padding:12px 20px;border-radius:999px}
+p{color:var(--muted);margin:6px 0 0}
+</style>
+</head>
+<body>
+<main>
+<img src="logo.jpg" alt="TAKINTII CAFE BİSTRO">
+<strong>Google yorum sayfası açılıyor…</strong>
+<p>Açılmazsa aşağıdaki butona dokunun.</p>
+<a id="go" href="https://www.google.com/search?q=takintii.cafebistro+burhaniye+yorumlar%C4%B1">Yorum yaz</a>
+</main>
+<script>
+/* QR kodu bu sayfaya gelir; asıl yorum linki menu.json'daki "Google yorum linki"dir ve panelden değiştirilebilir. */
+fetch("menu.json?v="+Date.now(),{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
+  var u=String(d&&d.review||"");if(/^https:\/\//i.test(u)){document.getElementById("go").href=u;location.replace(u)}
+}).catch(function(){});
+</script>
+</body>
+</html>
