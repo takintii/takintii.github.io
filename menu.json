@@ -1,0 +1,908 @@
+{
+ "title": "TAKINTII CAFE BİSTRO",
+ "eyebrow": "Menü",
+ "note": "Fiyatlar Türk lirası cinsindendir, KDV dahildir.",
+ "cats": [
+  {
+   "id": "kokteyl",
+   "title": "Kokteyller",
+   "groups": [
+    {
+     "sub": "",
+     "type": "list",
+     "items": [
+      {
+       "n": "Cosmopolitan",
+       "d": "votka, kızılcık suyu",
+       "p": 400
+      },
+      {
+       "n": "Zesty Sorrel",
+       "d": "cin, kuzukulağı sos, şeker şurubu",
+       "p": 500
+      },
+      {
+       "n": "Long Island",
+       "d": "tekila, votka, cin, portakal likörü, beyaz rom",
+       "p": 650
+      },
+      {
+       "n": "Mojito",
+       "d": "beyaz rom, esmer şeker, soda",
+       "p": 400
+      },
+      {
+       "n": "Gin Fizz",
+       "d": "cin, tonik, pudra şekeri",
+       "p": 400
+      },
+      {
+       "n": "Negroni",
+       "d": "campari, vermut, cin",
+       "p": 400
+      },
+      {
+       "n": "Whiskey Sour",
+       "d": "viski, şeker şurubu, limon",
+       "p": 450
+      },
+      {
+       "n": "Passion Crunch",
+       "d": "votka, çarkıfelek",
+       "p": 500
+      },
+      {
+       "n": "Blueberry Tequila Sour",
+       "d": "tekila, yaban mersini",
+       "p": 400
+      },
+      {
+       "n": "Ocean Wave",
+       "d": "rom, blue curaçao, hindistan cevizi",
+       "p": 400
+      },
+      {
+       "n": "Sakura Coconut",
+       "d": "hindistan cevizi",
+       "p": 450
+      },
+      {
+       "n": "Pembeli",
+       "d": "çilek, votka, nar",
+       "p": 450
+      },
+      {
+       "n": "Afrodit",
+       "d": "orman meyveleri, tarçın, zencefil",
+       "p": 500
+      },
+      {
+       "n": "Apollo",
+       "d": "mango, ananas, hindistan cevizi, tarçın",
+       "p": 500
+      },
+      {
+       "n": "Zeus",
+       "d": "acı portakal, çilek, karanfil",
+       "p": 500
+      },
+      {
+       "n": "Herakles",
+       "d": "cin, çarkıfelek, acı biber, zerdeçal",
+       "p": 500
+      },
+      {
+       "n": "Eros",
+       "d": "cin, frambuaz, hibiscus, kakule",
+       "p": 500
+      },
+      {
+       "n": "Persephone",
+       "d": "nar, yaban mersini, zencefil",
+       "p": 500
+      },
+      {
+       "n": "Eclipse",
+       "d": "Madagaskar vanilyası",
+       "p": 500
+      },
+      {
+       "n": "Dry Martini",
+       "p": 450
+      },
+      {
+       "n": "Baileys Charm",
+       "d": "baileys, votka",
+       "p": 500
+      },
+      {
+       "n": "Margarita",
+       "d": "tekila, portakal likörü",
+       "p": 450
+      },
+      {
+       "n": "Strawberry Margarita",
+       "d": "tekila, portakal likörü, çilek likörü, şeker şurubu",
+       "p": 500
+      },
+      {
+       "n": "Espresso Martini",
+       "d": "espresso, votka",
+       "p": 450
+      },
+      {
+       "n": "Porn Star Martini",
+       "d": "votka, çarkıfelek meyvesi, vanilya",
+       "p": 500
+      },
+      {
+       "n": "Sex on the Beach",
+       "d": "votka, şeftali, kızılcık, portakal",
+       "p": 450
+      },
+      {
+       "n": "Jagger Boom",
+       "p": 450
+      }
+     ]
+    }
+   ],
+   "img": "kokteyl.jpg"
+  },
+  {
+   "id": "viski",
+   "title": "Viski & Ağır Alkoller",
+   "groups": [
+    {
+     "sub": "Tek · Duble · Şişe",
+     "type": "pours",
+     "items": [
+      {
+       "n": "Chivas",
+       "t": 450,
+       "du": 600,
+       "s": 6000
+      },
+      {
+       "n": "Jack Daniel's",
+       "t": 450,
+       "du": 600,
+       "s": 9000
+      },
+      {
+       "n": "J.W. Red Label",
+       "t": 350,
+       "du": 450,
+       "s": 6000
+      },
+      {
+       "n": "J.W. Black Label",
+       "t": 400,
+       "du": 500,
+       "s": 7500
+      },
+      {
+       "n": "J.W. Blue Label",
+       "t": 1000,
+       "du": 1500,
+       "s": 45000
+      },
+      {
+       "n": "J&B",
+       "t": 400,
+       "du": 500,
+       "s": 6000
+      },
+      {
+       "n": "Ballantine's",
+       "t": 450,
+       "du": 550,
+       "s": 7000
+      },
+      {
+       "n": "Jim Beam",
+       "t": 450,
+       "du": 600,
+       "s": 9000
+      },
+      {
+       "n": "Beefeater",
+       "t": 450,
+       "du": 600,
+       "s": 9000
+      },
+      {
+       "n": "Smirnoff",
+       "t": 400,
+       "du": 500,
+       "s": 7500
+      },
+      {
+       "n": "Gordon's",
+       "t": 400,
+       "du": 500,
+       "s": 5500
+      }
+     ]
+    },
+    {
+     "sub": "Şişe",
+     "type": "list",
+     "items": [
+      {
+       "n": "Singleton",
+       "p": 8000
+      },
+      {
+       "n": "The Glenlivet",
+       "p": 8500
+      },
+      {
+       "n": "Monkey Shoulder",
+       "p": 9250
+      },
+      {
+       "n": "Johnnie Walker Double Black",
+       "p": 12000
+      },
+      {
+       "n": "Chivas 18",
+       "p": 11000
+      },
+      {
+       "n": "Chivas 50 cl",
+       "p": 4000
+      },
+      {
+       "n": "Jameson",
+       "p": 10000
+      },
+      {
+       "n": "Dimple",
+       "p": 5000
+      },
+      {
+       "n": "Hennessy Konyak",
+       "p": 12000
+      },
+      {
+       "n": "Don Julio Tekila",
+       "p": 13000
+      },
+      {
+       "n": "Olmeca Gold 35 cl",
+       "p": 4000
+      },
+      {
+       "n": "Beefeater Çilek",
+       "p": 10000
+      },
+      {
+       "n": "Bombay",
+       "p": 10000
+      },
+      {
+       "n": "Hendrick's",
+       "p": 11000
+      }
+     ]
+    },
+    {
+     "sub": "Cin",
+     "type": "list",
+     "items": [
+      {
+       "n": "Cin tek",
+       "d": "4 cl",
+       "p": 300
+      },
+      {
+       "n": "Cin duble",
+       "d": "8 cl",
+       "p": 450
+      }
+     ]
+    }
+   ],
+   "img": "viski.svg"
+  },
+  {
+   "id": "shot",
+   "title": "Shot Bar",
+   "groups": [
+    {
+     "sub": "",
+     "type": "list",
+     "items": [
+      {
+       "n": "Jägermeister",
+       "p": 250
+      },
+      {
+       "n": "Olmeca Gold",
+       "p": 250
+      },
+      {
+       "n": "Olmeca Silver",
+       "p": 250
+      },
+      {
+       "n": "Votka",
+       "p": 250
+      },
+      {
+       "n": "Viski",
+       "p": 250
+      },
+      {
+       "n": "Takıntı Special 5'li Shot",
+       "p": 1000
+      },
+      {
+       "n": "Kezzap Shot 5'li",
+       "p": 1000
+      }
+     ]
+    }
+   ],
+   "img": "shot.svg"
+  },
+  {
+   "id": "sarap",
+   "title": "Şaraplar",
+   "groups": [
+    {
+     "sub": "",
+     "type": "list",
+     "items": [
+      {
+       "n": "Angora Kadeh",
+       "d": "beyaz, kırmızı, rosé",
+       "p": 350
+      },
+      {
+       "n": "Beyaz Şarap Şişe",
+       "p": 2000
+      },
+      {
+       "n": "Rosé Şarap Şişe",
+       "p": 2000
+      }
+     ]
+    }
+   ],
+   "img": "sarap.svg"
+  },
+  {
+   "id": "bira",
+   "title": "Biralar",
+   "groups": [
+    {
+     "sub": "Şişe & Kutu",
+     "type": "list",
+     "items": [
+      {
+       "n": "Bomonti Filtresiz",
+       "d": "50 cl",
+       "p": 275
+      },
+      {
+       "n": "Efes Green",
+       "d": "50 cl",
+       "p": 275
+      },
+      {
+       "n": "Efes Malt",
+       "d": "50 cl",
+       "p": 225
+      },
+      {
+       "n": "Efes Mavi",
+       "d": "50 cl",
+       "p": 225
+      },
+      {
+       "n": "Efes Glutensiz",
+       "d": "50 cl",
+       "p": 275
+      },
+      {
+       "n": "Efes +1",
+       "d": "50 cl",
+       "p": 225
+      },
+      {
+       "n": "Beck's",
+       "d": "50 cl",
+       "p": 275
+      },
+      {
+       "n": "Beck's",
+       "d": "33 cl",
+       "p": 200
+      },
+      {
+       "n": "Stella Artois",
+       "d": "50 cl",
+       "p": 275
+      },
+      {
+       "n": "Bud",
+       "d": "50 cl",
+       "p": 275
+      },
+      {
+       "n": "Belfast",
+       "d": "50 cl",
+       "p": 275
+      },
+      {
+       "n": "Miller",
+       "d": "50 cl",
+       "p": 300
+      },
+      {
+       "n": "Miller",
+       "d": "33 cl",
+       "p": 250
+      },
+      {
+       "n": "Corona",
+       "d": "33 cl",
+       "p": 250
+      },
+      {
+       "n": "Heineken",
+       "d": "33 cl",
+       "p": 300
+      },
+      {
+       "n": "Bistro",
+       "d": "33 cl",
+       "p": 175
+      }
+     ]
+    },
+    {
+     "sub": "Fıçı",
+     "type": "list",
+     "items": [
+      {
+       "n": "Fıçı bira",
+       "d": "33 cl",
+       "p": 175
+      },
+      {
+       "n": "Fıçı bira",
+       "d": "50 cl",
+       "p": 200
+      },
+      {
+       "n": "Bavyera fıçı",
+       "d": "1 lt",
+       "p": 350
+      }
+     ]
+    },
+    {
+     "sub": "Menüler",
+     "type": "list",
+     "items": [
+      {
+       "n": "Bira Menü",
+       "d": "4 bira, patates",
+       "p": 900
+      },
+      {
+       "n": "33 cl Fıçı Menü",
+       "d": "5 adet; turşu, mısır, fıstık ikram",
+       "p": 750
+      },
+      {
+       "n": "Meksika bardak",
+       "p": 20
+      }
+     ]
+    }
+   ],
+   "img": "bira.jpg"
+  },
+  {
+   "id": "aperatif",
+   "title": "Aperatifler",
+   "groups": [
+    {
+     "sub": "",
+     "type": "list",
+     "items": [
+      {
+       "n": "Bira Tabağı",
+       "d": "kaşık patates, çıtır tavuk baget, soğan halkası, sigara böreği, peynir kroket",
+       "p": 500
+      },
+      {
+       "n": "Çıtır Tabak",
+       "d": "kaşık patates, çıtır tavuk baget, soğan halkası, peynir kroket",
+       "p": 400
+      },
+      {
+       "n": "Şarap Tabağı",
+       "d": "5 çeşit peynir, üzüm",
+       "p": 550
+      },
+      {
+       "n": "Kasap Köfte",
+       "d": "5 adet köfte, salata, patates kızartması",
+       "p": 500
+      },
+      {
+       "n": "Schnitzel",
+       "d": "kaşık patates, salata",
+       "p": 400
+      },
+      {
+       "n": "Çıtır Tavuk",
+       "d": "200 gr",
+       "p": 350
+      },
+      {
+       "n": "Cheddar Patates",
+       "p": 350
+      },
+      {
+       "n": "Double Kaşık Patates Tabağı",
+       "p": 350
+      },
+      {
+       "n": "Patates Tabağı",
+       "p": 250
+      },
+      {
+       "n": "Peynir Kroket",
+       "d": "6 adet",
+       "p": 200
+      },
+      {
+       "n": "Soğan Halkası",
+       "d": "10 adet",
+       "p": 150
+      },
+      {
+       "n": "Meyve Tabağı",
+       "p": 350
+      },
+      {
+       "n": "Meyve Tabağı",
+       "d": "4 kişilik",
+       "p": 500
+      }
+     ]
+    }
+   ],
+   "img": "aperatif.jpg"
+  },
+  {
+   "id": "makarna",
+   "title": "Makarnalar",
+   "groups": [
+    {
+     "sub": "",
+     "type": "list",
+     "items": [
+      {
+       "n": "Penne Alfredo 200 gr",
+       "d": "krema, mantar, biber, tavuk",
+       "p": 450
+      },
+      {
+       "n": "Fettuccine Dağ Kekikli 200 gr",
+       "d": "krema, tavuk, dağ kekiği",
+       "p": 450
+      },
+      {
+       "n": "Spaghetti Bolonez 200 gr",
+       "d": "özel domates sos, dana kıyma",
+       "p": 450
+      },
+      {
+       "n": "Peynirli Fettuccine 200 gr",
+       "d": "krema, ezine peyniri, biber",
+       "p": 350
+      },
+      {
+       "n": "Penne Arrabbiata 200 gr",
+       "d": "acı sos",
+       "p": 350
+      }
+     ]
+    }
+   ],
+   "img": "makarna.jpg"
+  },
+  {
+   "id": "wrap",
+   "title": "Wrap",
+   "groups": [
+    {
+     "sub": "",
+     "type": "list",
+     "items": [
+      {
+       "n": "Et Wrap",
+       "d": "tortilla, bonfile dilimleri, renkli biber, mantar, özel sos, mix salata, kaşık patates",
+       "p": 500
+      },
+      {
+       "n": "Tavuk Wrap",
+       "d": "tortilla, jülyen tavuk, renkli biber, mantar, kaşık patates, mix salata",
+       "p": 400
+      },
+      {
+       "n": "Çıtır Wrap",
+       "d": "çıtır tavuklu wrap, salata, patates",
+       "p": 400
+      }
+     ]
+    }
+   ],
+   "img": "wrap.svg"
+  },
+  {
+   "id": "cerez",
+   "title": "Çerezler",
+   "groups": [
+    {
+     "sub": "",
+     "type": "list",
+     "items": [
+      {
+       "n": "Antep Fıstığı",
+       "p": 200
+      },
+      {
+       "n": "Badem",
+       "p": 200
+      },
+      {
+       "n": "Kaju",
+       "p": 200
+      },
+      {
+       "n": "Fındık",
+       "p": 150
+      },
+      {
+       "n": "Karışık Çerez",
+       "p": 120
+      },
+      {
+       "n": "Fıstık",
+       "p": 90
+      }
+     ]
+    }
+   ],
+   "img": "cerez.jpg"
+  },
+  {
+   "id": "sicak",
+   "title": "Sıcak İçecekler",
+   "groups": [
+    {
+     "sub": "Çay & Kahve",
+     "type": "list",
+     "items": [
+      {
+       "n": "Çay",
+       "p": 50
+      },
+      {
+       "n": "Filtre Kahve",
+       "p": 150
+      },
+      {
+       "n": "Americano",
+       "p": 150
+      },
+      {
+       "n": "Caffè Latte",
+       "p": 150
+      },
+      {
+       "n": "Cappuccino",
+       "p": 150
+      },
+      {
+       "n": "Flat White",
+       "p": 150
+      },
+      {
+       "n": "Mocha",
+       "p": 150
+      },
+      {
+       "n": "White Mocha",
+       "p": 150
+      },
+      {
+       "n": "Karamel Macchiato",
+       "p": 150
+      }
+     ]
+    },
+    {
+     "sub": "Türk Kahvesi",
+     "type": "list",
+     "items": [
+      {
+       "n": "Türk Kahvesi",
+       "d": "sade, az şekerli, orta, şekerli",
+       "p": 125
+      },
+      {
+       "n": "Duble Türk Kahvesi",
+       "d": "sade, orta, şekerli",
+       "p": 250
+      }
+     ]
+    },
+    {
+     "sub": "Diğer",
+     "type": "list",
+     "items": [
+      {
+       "n": "Sütlü Salep",
+       "p": 200
+      },
+      {
+       "n": "Sıcak Çikolata",
+       "p": 150
+      }
+     ]
+    }
+   ],
+   "img": "sicak.jpg"
+  },
+  {
+   "id": "soguk-kahve",
+   "title": "Soğuk Kahveler",
+   "groups": [
+    {
+     "sub": "",
+     "type": "list",
+     "items": [
+      {
+       "n": "Ice Latte",
+       "p": 150
+      },
+      {
+       "n": "Ice Americano",
+       "p": 130
+      },
+      {
+       "n": "Ice Frappe",
+       "p": 150
+      },
+      {
+       "n": "Ice Karamel Macchiato",
+       "p": 150
+      },
+      {
+       "n": "Ice Flower",
+       "p": 150
+      }
+     ]
+    }
+   ],
+   "img": "soguk-kahve.jpg"
+  },
+  {
+   "id": "soguk",
+   "title": "Soğuk İçecekler",
+   "groups": [
+    {
+     "sub": "Gazlı & Soda",
+     "type": "list",
+     "items": [
+      {
+       "n": "Kola",
+       "p": 120
+      },
+      {
+       "n": "Şişe Kola",
+       "d": "200 ml",
+       "p": 150
+      },
+      {
+       "n": "Fanta",
+       "p": 120
+      },
+      {
+       "n": "Gazoz",
+       "p": 120
+      },
+      {
+       "n": "Red Bull",
+       "p": 150
+      },
+      {
+       "n": "Sade Soda",
+       "p": 80
+      },
+      {
+       "n": "Limonlu Soda",
+       "p": 100
+      },
+      {
+       "n": "Elmalı Soda",
+       "p": 100
+      },
+      {
+       "n": "Karpuz Çilek Soda",
+       "p": 100
+      },
+      {
+       "n": "Mango & Ananaslı Soda",
+       "p": 100
+      }
+     ]
+    },
+    {
+     "sub": "Ice Tea",
+     "type": "list",
+     "items": [
+      {
+       "n": "Ice Tea",
+       "d": "limon, şeftali, ahududu, portakal & mango, tropikal, limon & yuzu, mango & egzotik",
+       "p": 120
+      }
+     ]
+    },
+    {
+     "sub": "Meyve Suyu & Diğer",
+     "type": "list",
+     "items": [
+      {
+       "n": "Meyve Suyu",
+       "d": "karışık, şeftali",
+       "p": 120
+      },
+      {
+       "n": "Vişne Suyu",
+       "p": 120
+      },
+      {
+       "n": "Ev Yapımı Limonata",
+       "p": 150
+      },
+      {
+       "n": "Churchill",
+       "p": 120
+      },
+      {
+       "n": "Milkshake",
+       "d": "çilekli, vanilyalı, çikolatalı",
+       "p": 150
+      },
+      {
+       "n": "Çikolatalı Bubble Tea",
+       "p": 150
+      },
+      {
+       "n": "Ayran",
+       "p": 80
+      },
+      {
+       "n": "Su",
+       "p": 40
+      }
+     ]
+    }
+   ],
+   "img": "soguk.svg"
+  }
+ ],
+ "instagram": "https://www.instagram.com/takintii.cafebistro/",
+ "review": "https://share.google/LL4Mp2hYEUxt2kKk5",
+ "footer": "Afiyet olsun. Alerjen bilgisi için lütfen personelimize danışın."
+}
