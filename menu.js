@@ -36,7 +36,7 @@ function render(){
   if(!V)return;
   applyAccent(V.accent);
   if(V.title)document.title=V.title+" · Menü";
-  var logo=document.getElementById("logo"),lg=safeImg(V.logo);if(lg){logo.src=lg;logo.hidden=false}else logo.hidden=true;
+  var logo=document.getElementById("logo"),lg=safeImg(V.logo);if(lg){logo.src=lg;logo.alt=V.title||"Logo";logo.hidden=false}else logo.hidden=true;logo.parentNode.classList.toggle("has-logo",!!lg);
   document.getElementById("eyebrow").textContent=V.eyebrow||"Menü";
   document.getElementById("title").textContent=V.title||"";
   document.getElementById("note").textContent=V.note||"";

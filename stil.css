@@ -1,7 +1,7 @@
-/* Layout: single-column mobile menu; sticky search + category rail, sections below. One deliberate dark "bar at night" look. Data comes from a Google Sheet. */
+/* Brand: TAKINTII logo — black + amber. Layout: single-column mobile menu; sticky search + category rail, sections below. One deliberate dark "bar at night" look. Data comes from a Google Sheet. */
 :root{
-  --bg:#0e1a16; --surface:#14241f; --surface-2:#1a2e27; --line:#25382f; --fg:#efe7d6; --muted:#9fb0a5; --brass:#c9a24a; --brass-soft:#c9a24a22; --danger:#e07a6b; --ok:#7cc4a0;
-  --display:"Instrument Serif", Georgia, serif;
+  --bg:#0b0b0a; --surface:#151513; --surface-2:#1d1c19; --line:#2b2a25; --fg:#f6f0e3; --muted:#a8a294; --brass:#fbb91d; --brass-soft:#fbb91d22; --danger:#ef7d6a; --ok:#8fd19e;
+  --display:"Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
   --body:"Manrope", "Segoe UI", system-ui, sans-serif;
   color-scheme:dark;
 }
@@ -11,7 +11,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .wrap{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 header.hero{padding-block:36px 18px;display:grid;gap:6px}
 .eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:600}
-h1{font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,9vw,3.1rem);line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,9vw,3.1rem);line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
 .hero p{margin:4px 0 0;color:var(--muted);font-size:.9rem}
 
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-block:10px}
@@ -29,7 +29,7 @@ h1{font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,9vw,3.1rem)
 main{padding-block:8px 64px}
 section{padding-top:30px}
 .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:1px solid var(--brass);padding-bottom:8px;margin-bottom:6px}
-h2{font-family:var(--display);font-weight:400;font-size:2rem;margin:0;line-height:1.05}
+h2{font-family:var(--display);font-weight:800;font-size:1.75rem;letter-spacing:-.015em;margin:0;line-height:1.05}
 .count{font-size:.75rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
 h3{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:22px 0 4px;font-weight:700}
 .item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;padding-block:13px;border-bottom:1px dashed var(--line)}
@@ -55,7 +55,7 @@ mark{background:var(--brass-soft);color:var(--fg);border-radius:3px;padding:0 2p
 .tile{flex:none;width:86px;display:grid;justify-items:center;gap:7px;background:none;border:0;padding:0;color:var(--fg);font:inherit;cursor:pointer;text-align:center}
 .tile .ph{width:78px;height:78px;border-radius:50%;overflow:hidden;border:2px solid var(--brass);padding:3px;background:var(--bg)}
 .tile .ph img,.tile .ph .mono{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
-.tile .mono{display:grid;place-items:center;background:var(--surface-2);font-family:var(--display);font-size:1.8rem;color:var(--brass)}
+.tile .mono{display:grid;place-items:center;background:var(--surface-2);font-family:var(--display);font-weight:800;font-size:1.6rem;color:var(--brass)}
 .tile span{font-size:.74rem;font-weight:600;line-height:1.2;color:var(--muted)}
 .tile:focus-visible .ph{outline:2px solid var(--fg);outline-offset:2px}
 .sec-img{width:100%;aspect-ratio:16/7;max-width:100%;object-fit:cover;border-radius:14px;display:block;margin:4px 0 6px}
@@ -104,3 +104,11 @@ mark{background:var(--brass-soft);color:var(--fg);border-radius:3px;padding:0 2p
 .stale{font-size:.75rem;color:var(--muted);text-align:center;margin:8px 0 0}
 .pvbar{position:sticky;top:0;z-index:25;background:var(--brass);color:var(--bg);font-weight:700;font-size:.85rem}
 .pvbar .wrap{padding-block:8px}
+
+/* ---- Logo hero ---- */
+header.hero.has-logo{justify-items:center;text-align:center;padding-block:28px 14px}
+header.hero.has-logo .logo{width:min(190px,52vw);height:auto;aspect-ratio:1;border:0;border-radius:50%;margin:0 0 4px}
+header.hero.has-logo h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+header.hero.has-logo .links{justify-content:center}
+.cta h2,.infocard h2{font-size:1.5rem}
+.sec-head{border-bottom-width:2px}

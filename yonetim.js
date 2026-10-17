@@ -6,7 +6,7 @@
 var API="https://api.github.com";
 var KEY="takintii-admin";
 var TAGS={yeni:"Yeni",oneri:"Şefin önerisi",populer:"Popüler",aci:"Acı",vegan:"Vejetaryen"};
-var ACCENTS=[["#c9a24a","Altın"],["#d08a5c","Bakır"],["#d7838f","Gül"],["#7cc4a0","Nane"],["#8fb3e0","Buz"],["#cfc8bb","Gümüş"]];
+var ACCENTS=[["#fbb91d","Takıntı sarısı"],["#c9a24a","Altın"],["#d08a5c","Bakır"],["#d7838f","Gül"],["#7cc4a0","Nane"],["#8fb3e0","Buz"],["#cfc8bb","Gümüş"]];
 var FOOT_DEF="Afiyet olsun. Alerjen bilgisi için lütfen personelimize danışın.";
 var app=document.getElementById("app");
 
@@ -46,7 +46,7 @@ function errText(e){
   if(e.status===403)return "Erişim anahtarının bu depoya yazma izni yok (Contents: Read and write olmalı).";
   if(e.status===404)return "Depo bulunamadı. Kullanıcı adı ve depo adını kontrol edin.";
   if(e.status===409||e.status===422)return "Menü başka bir cihazdan değiştirilmiş. Sayfayı yenileyip tekrar deneyin.";
-  if(e instanceof TypeError)return "İnternet bağlantısı yok gibi görünüyor.";
+  if(e instanceof TypeError)return "GitHub’a ulaşılamadı. İnternet bağlantınızı ve erişim anahtarını kontrol edin.";
   return e.message||"bilinmeyen hata";
 }
 
@@ -56,6 +56,7 @@ function renderLogin(msg,cls){
    '<div class="card"><label class="field"><span class="lbl">GitHub kullanıcı adı</span><input class="in" id="lo" value="'+esc(cfg.owner)+'" autocomplete="username" autocapitalize="none"></label>'+
    '<label class="field"><span class="lbl">Depo adı</span><input class="in" id="lr" value="'+esc(cfg.repo)+'" autocapitalize="none"></label>'+
    '<label class="field"><span class="lbl">Erişim anahtarı (token)</span><input class="in" id="lt" type="password" value="'+esc(cfg.token)+'" autocomplete="current-password" placeholder="github_pat_…"></label>'+
+   '<label class="chk"><input type="checkbox" id="ls" onchange="document.getElementById(\'lt\').type=this.checked?\'text\':\'password\'"> Anahtarı göster</label>'+
    '<label class="chk"><input type="checkbox" id="lm" '+(cfg.remember?"checked":"")+'> Bu cihazda beni hatırla</label>'+
    '<div class="row"><button class="btn primary" id="lgo">Giriş yap</button></div>'+
    (msg?'<p class="hint '+(cls||"warn-t")+'">'+esc(msg)+"</p>":"")+"</div>"+
@@ -71,6 +72,7 @@ function renderLogin(msg,cls){
 function login(){
   cfg={owner:document.getElementById("lo").value.trim(),repo:document.getElementById("lr").value.trim(),token:document.getElementById("lt").value.trim(),remember:document.getElementById("lm").checked};
   if(!cfg.owner||!cfg.repo||!cfg.token){renderLogin("Üç alanı da doldurun.");return}
+  if(!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(cfg.token)){renderLogin("Erişim anahtarı eksik ya da hatalı kopyalanmış. github_pat_ veya ghp_ ile başlamalı, arada boşluk olmamalı. GitHub’daki kopyala simgesiyle tekrar kopyalayın.");return}
   var b=document.getElementById("lgo");b.disabled=true;b.textContent="Bağlanıyor…";
   gh("GET","/repos/"+encodeURIComponent(cfg.owner)+"/"+encodeURIComponent(cfg.repo)).then(function(r){
     if(r&&r.permissions&&!r.permissions.push)throw {status:403};
